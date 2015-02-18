@@ -9,6 +9,20 @@
 // outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 // Call that function 3 times with 3 different values for the arguments.
 
+// function fortuneTeller(job_title, geographic_location, partner_name, num_of_children) {
+// 	if (num_of_children === 1) {
+// 		document.write("You will be a " + job_title + " in " + geographic_location + ", married to " + partner_name + " with " + num_of_children + " kid.<br>");
+// 	}
+// 	else {
+// 		document.write("You will be a " + job_title + " in " + geographic_location + ", married to " + partner_name + " with " + num_of_children + " kids.<br>");
+// 	}
+// }
+
+// fortuneTeller("sculptor", "Paris", "Marilyn Monroe", 5);
+// fortuneTeller("pencil pusher", "Paradise", "nobody special", 1);
+// fortuneTeller("banker", "New Yor City", "Tom Ford", 1);
+
+
 // EXERCISE: The Age Calculator
 
 // Forgot how old you are? Calculate it!
@@ -20,6 +34,15 @@
 // Call the function three times with different sets of values.
 // Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
 
+
+// function calculateAge(current_year, birth_year) {
+// 	document.write("They are either " + (current_year - birth_year) + " or " + (current_year - birth_year - 1) + " years old.")
+// }
+
+// calculateAge(2015, 1989);
+// calculateAge(1345, 987);
+// calculateAge(1972, 1945);
+
 // EXERCISE: The Lifetime Supply Calculator
 
 // Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
@@ -30,6 +53,16 @@
 // outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X"
 // Call that function three times, passing in different values each time.
 // Bonus: Accept floating point values for amount per day, and round the result to a round number.
+
+
+
+// function calculateSupply(current_age, maximum_age, snack_amount_per_day) {
+// 	document.write("You will need " + ((maximum_age - current_age) * 365 * 4) + " snacks to last you until the ripe old age of " + maximum_age + ".<br>");
+// }
+
+// calculateSupply(25, 90, 4);
+// calculateSupply(47, 49, 12);
+// calculateSupply(3, 100, 2);
 
 // EXERCISE: The Geometrizer
 
@@ -44,6 +77,20 @@
 // Pass the radius to the function.
 // Calculate the area based on the radius, and output "The area is NN".
 
+// function calcCircumfrence(radius) {
+// 	circumference = Math.PI * (2*radius);
+// 	document.write("The circumference of the circle is " + circumference + " cm. <br>");
+// }
+
+// function calcArea(radius) {
+// 	area = Math.PI * (radius * radius)
+// 	document.write("The area of the circle is " + area + " cm. <br>");
+// }
+
+// calcCircumfrence(4);
+// calcArea(9);
+
+
 // EXERCISE: The Temperature Converter
 
 // It's hot out! Let's make a converter based on the steps here.
@@ -56,4 +103,14 @@
 
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
+
+function celsiusToFahrenheit(celsius) {
+	document.write(celsius + "°C " + "is " + (celsius * 9/5 + 32 ) + "°F.<br>")
+}
+function fahrenheitToCelsius(fahrenheit) {
+	document.write(fahrenheit + "°F " + "is " + ((fahrenheit - 32)* 5/9) + "°C.<br>")
+}
+
+celsiusToFahrenheit(25);
+fahrenheitToCelsius(95);
 

@@ -60,7 +60,7 @@
 // radius = 4
 // circumference = Math.PI * (2*radius);
 // area = Math.PI * (radius * radius)
-// document.write("The circumference of the circle is " + 4 + " cm. <br>");
+// document.write("The circumference of the circle is " + circumference + " cm. <br>");
 // document.write("The area of the circle is " + area + " cm. <br>");
 
 
