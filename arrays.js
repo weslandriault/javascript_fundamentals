@@ -17,7 +17,7 @@ function favColours(colours) {
 		else if (i === 2) {
 			console.log("My 3rd choice is " + colours[i] + ".");
 		}
-		else{
+		else {
 			console.log("My " + (i+1) + "th"  + " choice is " + colours[i] + ".");
 		}
 	}
